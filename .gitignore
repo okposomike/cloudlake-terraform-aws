@@ -1,0 +1,13 @@
+# Ignore local Terraform execution state and lock files
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Ignore sensitive variable values
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
