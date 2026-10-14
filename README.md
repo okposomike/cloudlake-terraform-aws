@@ -147,7 +147,7 @@ cloudlake-terraform-aws/
 └── README.md
 ```
 
-Adjust this structure to match the actual files in the repository. Add the Gold SQL scripts to `sql/gold/` if they are not there already.
+<img width="322" height="445" alt="Screenshot 2026-10-14 204244" src="https://github.com/user-attachments/assets/f53b4e5c-6b48-4dde-853e-54d788c0f56b" />
 
 ## Getting Started
 
@@ -297,4 +297,4 @@ Through CloudLake, I have gained hands-on experience with:
 
 - LinkedIn: https://www.linkedin.com/in/okposo-michael-b0b99224a/
 
-CloudLake is part of my ongoing journey in cloud data engineering, focused on building practical projects that solve real data problems.<img width="1365" height="597" alt="Screenshot 2026-10-14 201231" src="https://github.com/user-attachments/assets/b0d264d9-c20d-4679-a764-14f2a18342bd" />
+CloudLake is part of my ongoing journey in cloud data engineering, focused on building practical projects that solve real data problems.
