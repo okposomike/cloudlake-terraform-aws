@@ -45,7 +45,24 @@ resource "aws_iam_role_policy" "glue_s3_access" {
           aws_s3_bucket.data_lake.arn,
           "${aws_s3_bucket.data_lake.arn}/*"
         ]
+      },
+      {
+        Effect = "Allow"
+
+        Action = [
+          "logs:CreateLogGroup",
+          "logs:CreateLogStream",
+          "logs:PutLogEvents"
+        ]
+
+        Resource = "arn:aws:logs:*:*:log-group:/aws-glue/*"
       }
     ]
   })
+}
+
+# Attach standard AWS Glue Service Policy for catalog and crawler operations
+resource "aws_iam_role_policy_attachment" "glue_service" {
+  role       = aws_iam_role.glue_role.name
+  policy_arn = "arn:aws:iam::aws:policy/service-role/AWSGlueServiceRole"
 }
